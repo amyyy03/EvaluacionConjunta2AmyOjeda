@@ -1,5 +1,6 @@
 package espe.edu.ec.prueba.services;
 
+import espe.edu.ec.prueba.Repository.SimulacionRepository;
 import espe.edu.ec.prueba.entities.ProductoFinanciero;
 import espe.edu.ec.prueba.entities.ProductoSelecionado;
 import espe.edu.ec.prueba.entities.Simulacion;
@@ -62,5 +63,9 @@ public class SimulacionService {
 
         // Devolver la simulación calculada
         return simulacion;
+    }
+
+    public List<Simulacion> getSimulacionesByUsuario(UUID usuarioId) {
+        return SimulacionRepository.findByUsuarioId(usuarioId);
     }
 }

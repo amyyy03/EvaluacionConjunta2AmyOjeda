@@ -5,11 +5,14 @@ import java.math.BigDecimal;
 public class ProductoDTO {
     private String nombre;
     private BigDecimal precio;
+    private BigDecimal porcentajeGanancia;
     private BigDecimal porcentajeRetorno;
 
-    public ProductoFinanciero(String nombre, BigDecimal precio, BigDecimal porcentajeRetorno) {
-        this.nombre = nombre;
-        this.precio = precio;
+    public BigDecimal getPorcentajeRetorno() {
+        return porcentajeRetorno;
+    }
+
+    public void setPorcentajeRetorno(BigDecimal porcentajeRetorno) {
         this.porcentajeRetorno = porcentajeRetorno;
     }
 
