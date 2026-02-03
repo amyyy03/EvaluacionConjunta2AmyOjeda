@@ -3,6 +3,7 @@ package espe.edu.ec.prueba.entities;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
+import java.time.DateTimeException;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
@@ -13,7 +14,9 @@ public class Simulacion {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-    private UUID usuarioid;
+
+    private UUID usuarioId;
+
     private LocalDateTime fecha_simulacion;
     private BigDecimal capital_disponible;
     private BigDecimal ganancia_total;
@@ -47,12 +50,12 @@ public class Simulacion {
         this.id = id;
     }
 
-    public UUID getUsuarioid() {
-        return usuarioid;
+    public UUID getUsuarioId() {
+        return usuarioId;
     }
 
-    public void setUsuarioid(UUID usuarioid) {
-        this.usuarioid = usuarioid;
+    public void setUsuarioId(UUID usuarioid) {
+        this.usuarioId = usuarioid;
     }
 
     public LocalDateTime getFecha_simulacion() {
