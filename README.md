@@ -1,19 +1,19 @@
-## 🧠 **Evaluación Conjunta 2 – Microservicio de Simulación de Inversiones**
+## **Evaluación Conjunta 2 – Microservicio de Simulación de Inversiones**
 
 Este proyecto es una aplicación backend construida en **Java** con **Spring Boot**, diseñada para implementar un microservicio que permita:
 
-✅ Recibir inversiones de usuarios
-✅ Seleccionar productos financieros adecuados
-✅ Calcular ganancias esperadas
-✅ Agregar simulaciones históricas por usuario
+* Recibir inversiones de usuarios
+* Seleccionar productos financieros adecuados
+* Calcular ganancias esperadas
+* Agregar simulaciones históricas por usuario
 
-📁 Lenguaje: Java
-📌 Frameworks: Spring Boot, Spring Data JPA
-📌 Persistencia: JPA (ORM)
+Lenguaje: Java
+Frameworks: Spring Boot, Spring Data JPA
+Persistencia: JPA (ORM)
 
 ---
 
-## 🧾 **Descripción General**
+## **Descripción General**
 
 Esta evaluación tenía como objetivo desarrollar una API REST que permitiera:
 
@@ -58,7 +58,7 @@ src/
 
 ---
 
-## 📌 **Endpoints Implementados**
+## **Endpoints Implementados**
 
 ### **POST /simulaciones**
 
@@ -92,7 +92,7 @@ Devuelve todas las simulaciones almacenadas para ese usuario.
 
 ---
 
-## 📊 **Cómo se calcula la simulación**
+## **Cómo se calcula la simulación**
 
 Cada producto se evalúa secuencialmente:
 
@@ -107,7 +107,7 @@ gananciaEsperada = costo * (porcentajeRetorno / 100)
 
 ---
 
-## 📌 **Qué se logró**
+## **Qué se logró**
 
 ✅ Modelo de entidades para usuario, producto y simulación
 ✅ DTO para recepción de simulación
@@ -118,7 +118,7 @@ gananciaEsperada = costo * (porcentajeRetorno / 100)
 
 ---
 
-## 📥 **Requisitos para ejecutar el proyecto**
+## **Requisitos para ejecutar el proyecto**
 
 1. Java 17+
 2. Maven
@@ -127,7 +127,7 @@ gananciaEsperada = costo * (porcentajeRetorno / 100)
 
 ---
 
-## 📦 **Dependencias principales**
+## **Dependencias principales**
 
 ```xml
 <dependency>
